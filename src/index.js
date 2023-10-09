@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from 'components/App/App';
-import './index.css';
-
-const optionsFeedback = ['good', 'neutral', 'bad'];
+import { GlobalStyle } from 'components/GlobalStyle';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App options={optionsFeedback} />
+    <App />
+    <GlobalStyle />
   </React.StrictMode>
 );
